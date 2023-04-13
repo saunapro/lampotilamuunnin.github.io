@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(kuva/lampotilamuunnin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden; /* Hide horizontal scrollbar */
+
+}
+h1{
+    color:whitesmoke;
+}
+p{
+    color:whitesmoke;
+}
+label{
+    color:whitesmoke;
+}
+h2{
+    color: whitesmoke;
+}
+
+

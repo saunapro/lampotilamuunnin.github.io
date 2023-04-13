@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Lämpötilamuunnin</title>
+</head>
+<body>
+    <div class="row p-5"></div>
+    <h1 class="text-center">Lämpötilamuunnin</h1>
+    <div class="row p-5"></div>
+<div class="text-center">
+    <select class="form-select mx-auto justify-content-center text-center w-auto" name="muunnin" id="muunnin-valikko">
+        <option value="celcius" id="celcius">Celsius -> Fahrenheit</option>
+        <option value="fahrenheit" id="fahrenheit">Fahrenheit -> Celsius</option>
+    </select>
+</div>
+
+<div class="row p-3"></div>
+    <p class="text-center form-control-lg" >Syötä lämpötila:</p>
+
+    <div class="text-center">
+    <form>
+
+        <input class="form-control-lg" type="text" id="input">
+        
+    </form>
+    <div class="row p-3"></div>
+    <button class="btn btn-primary btn-lg" onclick="testaaSyote(event)">Muunna</button>
+</div>
+<div class="row p-3"></div>
+<div class="text-center">
+<form id="desit">
+    <input type="radio" name="nappi" id="1desi" value="1desi" checked>
+    <label for="1desi">1 desimaali</label><br>
+    <input type="radio" name="nappi" id="2desi" value="2desi">
+    <label for="2desi">2 desimaali</label><br>
+    <input type="radio" name="nappi" id="3desi" value="3desi">
+    <label for="3desi">3 desimaali</label><br>
+</form>
+</div>
+<div class="row p-3"></div>
+<h2 class="text-center" id="vastaus"></h2>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+</html>
